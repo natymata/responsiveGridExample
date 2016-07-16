@@ -1,0 +1,94 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	max-width: 60em;/*960/16*/
+	margin: 0 auto;
+
+	font-size: 1em;
+}
+
+.header, .footer {
+	height: 6.25em;/*100/16*/
+}
+
+.header {
+	background-color: #06f;
+}
+
+.footer {
+	background-color: #0cf;
+}
+
+.sidebar, .main-content {
+	float: left;
+	
+	padding: 1.25em 2.0833333%;/* 20/16 20/960 */
+}
+
+.sidebar {
+	width: 33.333333%;/*320/960*/
+	height: 18.75em;/*300/16*/
+
+	background-color: #ccc;
+}
+
+.main-content {
+	width: 58.333333%;/*560/960*/
+	
+	background-color: #999;
+}
+
+.main-content .col {
+	width: 30.714286%;/*172/560*/
+	height: 18.75em;/*300/16*/
+	float: left;
+	margin-left: 3.9285714%;/*22/560*/
+
+	background-color: #060;
+
+}
+
+.main-content .col:first-child {
+	margin-left: 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+ .sidebar, .main-content{width: 95.8333337%}
+ 
+}
+
+
+@media screen and (max-width: 568px){
+
+ 
+ .main-content .col{ 
+ 	width: 100%; 
+ 	margin-left: 0; 
+ 	margin-bottom: 0.75em;
+ } 
+}
+
+
+
+
+/*box-sizing:border-box;*/
+/*con esto se logra que se incluyan las medidas de los margin y paddings adentro de la medida inicial
